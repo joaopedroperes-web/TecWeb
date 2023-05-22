@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  max-width: 100%;
+  height: 80vw;
+  width: 100vw;
+  font-family: Inter, sans-serif;
+  color: #1d1d1d;
+}
+
+.container {
+  padding: 0px 200px;
+}
+
+.black-button {
+  background-color: #1d1d1d;
+  transition: box-shadow .2s, background-color .2s, transform .2s, color .2s;
+  border-radius: 8px;
+  padding: 6px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  border-style: none;
+  color: white;
+}
+
+.black-button:hover {
+  background-color: #3a3a3a;
+  cursor: pointer;
+}
+
+
+
+
+
+.nav-bar>a {
+  width: min-content;
+}
+
+.nav-bar--logo {
+  width: 180px;
+}
+
+.nav-bar {
+  z-index: 200;
+  background-color: #fff;
+  border-bottom: 1px solid #f5f6f7;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  max-width: 100%;
+  flex-basis: 25em
+}
+
+.nav-bar--search-wrapper {
+  flex-grow: 0.9;
+  width: min-content;
+}
+
+.search-bar {
+  width: 280px;
+  height: 36px;
+  color: #1d1d1d;
+  background-color: #f5f6f7;
+  background-image: url("https://uploads-ssl.webflow.com/643555a120509a18b1817654/643555a120509a2332817666_MagnifyingGlass%20Grey.svg");
+  background-position: 8px;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  border: 1px solid #f5f6f7;
+  border-radius: 6px;
+  margin-bottom: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 32px;
+  font-size: 15px;
+  font-weight: 400;
+  transition: border-color .2s;
+}
+
+.nav-bar--buttons-wrapper {
+  display: flex;
+  max-height: 60%;
+}
+
+.nav-bar--buttons-wrapper>button {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  border-style: none;
+}
+
+.login-button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 5px;
+  color: #626a72;
+}
+
+.login-button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.signup-button {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.signup-button:hover {
+  background-color: #3a3a3a;
+}
+
+
+
+
+
+
+
+
+.home-banner {
+  background-color: #f5f6f7;
+  height: 33vw;
+  max-width: 100%;
+  position: relative;
+}
+
+.home-banner--bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  display: flex;
+  background-color: #f5f6f7;
+  background-image: linear-gradient(54deg, rgba(255, 131, 122, .25), rgba(255, 131, 122, 0) 28%), linear-gradient(241deg, rgba(239, 152, 207, .25), rgba(239, 152, 207, 0) 36%);
+  justify-content: space-between;
+}
+
+.home-banner--info-wrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-banner--helper {
+  width: 400px;
+}
+
+#home-banner--helper>h1 {
+  font-size: 46px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  line-height: 1.25em;
+}
+
+#home-banner--helper>p {
+  margin-bottom: 32px;
+  font-size: 20px;
+}
+
+.home-banner--button {
+  padding: 10px 29px;
+  font-size: 18px;
+}
+
+.home-banner--image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 0;
+}
+
+.home-banner--image-wrapper>img {
+  width: 337px;
+  height: 337px;
+}
+
+
+
+
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.w-button {
+  color: #fff;
+  line-height: inherit;
+  cursor: pointer;
+  background-color: #3898ec;
+  border: 0;
+  border-radius: 0;
+  padding: 9px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+
+
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  height: 45vw;
+  background-color: #fff;
+}
+
+.courses--wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #626a72;
+}
+
+.section-top {
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.section-top h2 {
+  margin-bottom: 12px;
+  font-size: 26px;
+  line-height: 1.4em;
+  font-weight: 600;
+  display: block;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+
+.courses--card {
+  width: 100%;
+  height: 100%;
+  color: #1d1d1d;
+  text-align: left;
+  border-radius: 4px;
+  flex-direction: column;
+  transition: transform .2s, opacity .2s;
+  overflow: hidden;
+}
+
+.courses-division {
+  width: 100%;
+  grid-column-gap: 48px;
+  grid-row-gap: 32px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.ebook-thumbnail {
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.image-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.card-text-link {
+  width: 100%;
+  max-width: 450px;
+  color: #1d1d1d;
+  text-align: left;
+  border-radius: 4px;
+  flex-direction: column;
+  transition: transform .2s, opacity .2s;
+  overflow: hidden;
+}
+
+.button {
+  color: #fff;
+  text-align: center;
+  background-color: #1d1d1d;
+  border-radius: 9px;
+  flex: none;
+  margin-bottom: 8px;
+  padding: 8px 28px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: box-shadow .2s, transform .2s, border-color .2s, color .2s, background-color .2s;
+  box-shadow: 0 2px rgba(32, 32, 32, .05);
+}
+
+.job-border {
+  color: #030407;
+  background-color: #fff;
+  border: 1px solid #ebebef;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px;
+  text-decoration: none;
+  transition: border-color .3s;
+  display: block;
+}
+
+.job-company-wrap {
+  grid-column-gap: 14px;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-right: 10px;
+  display: flex;
+}
+
+.icon-wrap-regular {
+  width: 56px;
+  height: 56px;
+  background-color: #fff;
+  border: 1px solid #ebebef;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 24px;
+}
+
+.job-tags {
+  grid-column-gap: 8px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.job-card-details-wrap {
+  grid-column-gap: 24px;
+  grid-row-gap: 12px;
+  color: #606476;
+  letter-spacing: -.03em;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: 500;
+  display: flex;
+}
+
+.collection-list-jobs {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
