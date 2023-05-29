@@ -23,40 +23,32 @@
                 <input type="submit" value="Register" id="submit">
             </form>
 
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
-            $(document).ready(function() {
-                // Manipular o envio do formulário
-                $('#form').submit(function(event) {
-                    event.preventDefault();
-
-                    // Obter os valores do formulário
-                    var name = $('#name').val();
-                    var email = $('#email').val();
-                    var password = $('#password').val();
-
-                    // Criar um objeto com os dados do usuário
-                    var user = {
-                        name: name,
-                        email: email,
-                        password: password
-                    };
-
-                    // Enviar os dados para o PHP usando AJAX
-                    $.ajax({
-                        url: 'salvar.php', // Caminho para o arquivo PHP
-                        type: 'POST',
-                        data: user,
-                        success: function(response) {
-                            alert(response); // Exibir a resposta do servidor
-                        },
-                        error: function(xhr, status, error) {
-                            alert('Ocorreu um erro durante o cadastro: ' + error);
-                        }
+                $(document).ready(function() {
+                    $('#meuFormulario').submit(function(event) {
+                        event.preventDefault();
+                
+                        var nome = $('#nome').val();
+                        var email = $('#email').val();
+                
+                        $.ajax({
+                            url: 'salvar.php',
+                            type: 'POST',
+                            data: { nome: nome, email: email },
+                            success: function(response) {
+                                if (response.success) {
+                                    alert('Cadastro realizado com sucesso!');
+                                } else {
+                                    alert('Ocorreu um erro durante o cadastro: ' + response.error);
+                                }
+                            },
+                            error: function(xhr, status, error) {
+                                alert('Ocorreu um erro durante o cadastro: ' + error);
+                            }
+                        });
                     });
                 });
-            });
-            </script>
+                </script>
 
             <p>Já possui uma conta? <a href="../login/login.html">Login</a> </p>
 
