@@ -32,8 +32,8 @@
                         var email = $('#email').val();
                 
                         $.ajax({
-                            url: 'salvar.php',
-                            type: 'POST',
+                            url: '/localhost/var/www/tecweb/TecWeb/register/salvar.php',
+                            type: 'GET',
                             data: { nome: nome, email: email },
                             success: function(response) {
                                 if (response.success) {

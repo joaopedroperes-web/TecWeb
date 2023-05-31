@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $dados = "Nome: " . $nome . "\n" . "Email: " . $email . "\n\n";
 
 // Especifique o caminho completo para o arquivo de bloco de notas
-$caminhoArquivo = "/dados.txt";
+$caminhoArquivo = "./dados.txt";
 
 // Abra o arquivo em modo de escrita
 $arquivo = fopen($caminhoArquivo, "a");
