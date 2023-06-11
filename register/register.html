@@ -23,32 +23,34 @@
                 <input type="submit" value="Register" id="submit">
             </form>
 
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
             <script>
-                $(document).ready(function() {
-                    $('#meuFormulario').submit(function(event) {
+                $(document).ready(function () {
+                    $('#meuFormulario').submit(function (event) {
                         event.preventDefault();
-                
+
                         var nome = $('#nome').val();
                         var email = $('#email').val();
-                
+
                         $.ajax({
                             url: '/localhost/var/www/tecweb/TecWeb/register/salvar.php',
                             type: 'GET',
                             data: { nome: nome, email: email },
-                            success: function(response) {
+                            success: function (response) {
                                 if (response.success) {
                                     alert('Cadastro realizado com sucesso!');
                                 } else {
                                     alert('Ocorreu um erro durante o cadastro: ' + response.error);
                                 }
                             },
-                            error: function(xhr, status, error) {
+                            error: function (xhr, status, error) {
                                 alert('Ocorreu um erro durante o cadastro: ' + error);
                             }
                         });
                     });
                 });
-                </script>
+            </script>
 
             <p>Já possui uma conta? <a href="../login/login.html">Login</a> </p>
 
