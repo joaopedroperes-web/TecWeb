@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Jobs</title>
+</head>
+
+<body>
+
+  <nav class="nav-bar container">
+    <a href="../home/index.html">
+      <img class="nav-bar--logo"
+        src="https://uploads-ssl.webflow.com/643555a120509a18b1817654/64355624c2464482e15d3880_PGRAMIN_IMG.png"
+        alt="Logo PGRAMIN">
+    </a>
+
+    <div class="nav-bar--buttons-wrapper">
+      <a href="../login/login.html"><button class="black-button">Logout</button></a>
+    </div>
+  </nav>
+
+  <header>
+    <h1 class="header-title">
+      ENCONTRE O <br> <span>TRABALHO PERFEITO</span> <br> PARA VOCÊ
+    </h1>
+  </header>
+
+  <div class="search-wrapper">
+    <div class="search-box">
+      <div class="search-card">
+        <input class="search-input" type="text" placeholder="Job title or keywords">
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="filter-box">
+    <div class="filter-dropdown">
+      <select class="filter-select" id="job-level" name="job-level">
+        <option>Job level</option>
+        <option>Entry</option>
+        <option>Mid-Senior</option>
+        <option>Director</option>
+      </select>
+      <select class="filter-select" id="job-function" name="job-function">
+        <option>Job Function</option>
+        <option>IT</option>
+        <option>Management</option>
+        <option>Education</option>
+      </select>
+      <select class="filter-select" id="employment" name="employment">
+        <option>Employment Type</option>
+        <option>Intern</option>
+        <option>Part Time</option>
+        <option>Full Time</option>
+      </select>
+
+      <select class="filter-select" id="location" name="location">
+        <option>Locations</option>
+        <option>Remote</option>
+        <option>US</option>
+        <option>UK</option>
+      </select>
+
+      <select class="filter-select" id="education" name="education">
+        <option>Education</option>
+        <option>High School</option>
+        <option>Bachelor's degree</option>
+        <option>Master's degree</option>
+      </select>
+    </div>
+
+    <div class="filter-chosen">
+      <div class="chosen-card">
+        Remote <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="chosen-card">
+        Full time <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="chosen-card">
+        Financial Tech <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="chosen-card">
+        Entry level <i class="fas fa-times-circle"></i>
+      </div>
+    </div>
+  </div>
+
+  <section class="job-list" id="jobs">
+    <div class="job-card">
+      <div class="job-name">
+        <img src="../assets/images/svg/job/facebook.svg" class="job-profile">
+        <div class="job-detail">
+          <h4>Facebook</h4>
+          <h3>Mechanivel Engineer</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="job-label">
+        <a href="#" class="label-a">HTML</a>
+        <a href="#" class="label-b">CSS</a>
+        <a href="#" class="label-c">JS</a>
+      </div>
+      <div class="job-posted">
+        Posted 55 min ago
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-name">
+        <img src="../assets/images/svg/job/paypal.svg" class="job-profile">
+        <div class="job-detail">
+          <h4>Paypal</h4>
+          <h3>Front End Engineer</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="job-label">
+        <a href="#" class="label-a">HTML</a>
+        <a href="#" class="label-b">CSS</a>
+        <a href="#" class="label-c">JS</a>
+      </div>
+      <div class="job-posted">
+        Posted 2 min ago
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-name">
+        <img src="../assets/images/svg/job/spotify.svg" class="job-profile">
+        <div class="job-detail">
+          <h4>Spotify</h4>
+          <h3>Java Back-End Engineer</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="job-label">
+        <a href="#" class="label-a">HTML</a>
+        <a href="#" class="label-b">CSS</a>
+        <a href="#" class="label-c">JS</a>
+      </div>
+      <div class="job-posted">
+        Posted 4 days ago
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-name">
+        <img src="../assets/images/svg/job/tokopedia.svg" class="job-profile">
+        <div class="job-detail">
+          <h4>Tokopedia</h4>
+          <h3>UI UX Designer</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="job-label">
+        <a href="#" class="label-a">HTML</a>
+        <a href="#" class="label-b">CSS</a>
+        <a href="#" class="label-c">JS</a>
+      </div>
+      <div class="job-posted">
+        Posted an hour ago
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-name">
+        <img src="../assets/images/svg/job/dribble.svg" class="job-profile">
+        <div class="job-detail">
+          <h4>Dribble</h4>
+          <h3>UI UX Designer</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="job-label">
+        <a href="#" class="label-a">HTML</a>
+        <a href="#" class="label-b">CSS</a>
+        <a href="#" class="label-c">JS</a>
+      </div>
+      <div class="job-posted">
+        Posted 10 days ago
+      </div>
+    </div>
+    <button class="job-more">More list</button>
+  </section>
+</body>
+
+</html>
