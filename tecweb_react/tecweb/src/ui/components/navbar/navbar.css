@@ -1,0 +1,85 @@
+
+.nav-bar>a {
+    width: min-content;
+}
+  
+.nav-bar--logo {
+width: 180px;
+}
+
+.nav-bar {
+z-index: 200;
+background-color: #fff;
+border-bottom: 1px solid #f5f6f7;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+display: flex;
+position: sticky;
+top: 0;
+height: 70px;
+max-width: 100%;
+flex-basis: 25em
+}
+
+.nav-bar--search-wrapper {
+flex-grow: 0.9;
+width: min-content;
+}
+
+.search-bar {
+width: 280px;
+height: 36px;
+color: #1d1d1d;
+background-color: #f5f6f7;
+background-image: url("https://uploads-ssl.webflow.com/643555a120509a18b1817654/643555a120509a2332817666_MagnifyingGlass%20Grey.svg");
+background-position: 8px;
+background-repeat: no-repeat;
+background-size: 18px;
+border: 1px solid #f5f6f7;
+border-radius: 6px;
+margin-bottom: 0;
+padding-top: 7px;
+padding-bottom: 7px;
+padding-left: 32px;
+font-size: 15px;
+font-weight: 400;
+transition: border-color .2s;
+}
+
+.nav-bar--buttons-wrapper {
+display: flex;
+max-height: 60%;
+}
+
+.nav-bar--buttons-wrapper>button {
+font-size: 15px;
+font-weight: 500;
+line-height: 24px;
+border-style: none;
+}
+
+.login-button {
+background-color: transparent;
+border: 1px solid transparent;
+padding: 5px;
+color: #626a72;
+}
+
+.login-button:hover {
+color: black;
+cursor: pointer;
+}
+
+.signup-button {
+color: #fff;
+margin-left: 20px;
+}
+
+.signup-button:hover {
+background-color: #3a3a3a;
+}
+
+.nav-bar--buttons-wrapper > .black-button{
+    margin-right: 15px;
+}
