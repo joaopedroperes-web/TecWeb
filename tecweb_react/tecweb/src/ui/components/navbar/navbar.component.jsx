@@ -3,16 +3,16 @@ import './navbar.css'
 
 
 export const Navbar = () => {
-  
+
   const navigation = useNavigate()
 
   return (
     <>
       <nav className="nav-bar container">
-        <a href="./index.html">
+        <a href="/" onClick={navigation("/")}>
           <img className="nav-bar--logo"
-              src="https://uploads-ssl.webflow.com/643555a120509a18b1817654/64355624c2464482e15d3880_PGRAMIN_IMG.png"
-              alt="Logo PGRAMIN" />
+            src="https://uploads-ssl.webflow.com/643555a120509a18b1817654/64355624c2464482e15d3880_PGRAMIN_IMG.png"
+            alt="Logo PGRAMIN" />
         </a>
         <div className="nav-bar--buttons-wrapper">
           <button className="black-button" onClick={() => navigation("/login")}>Login</button>
