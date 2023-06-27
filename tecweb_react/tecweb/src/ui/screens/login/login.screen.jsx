@@ -7,7 +7,31 @@ import logo from '../../../assets/images/logo.png'
 export const Login = () => {
     const navigation = useNavigate()
 
+    const mudarCor = () => {
+        var botao = document.getElementById('botao');
+
+        botao.style.backgroundColor = "#1E90FF";
+    }
+
+
+
     const handleLoginFormSubmission = (event) => {
+
+        var password = document.getElementById('password');
+        var nome = document.getElementById('name');
+
+        if (nome.value == "" || nome.value == null) {
+            alert("Preencha o campo nome");
+            nome.focus();
+            return false;
+        }
+
+        if (password.value == "" || password.value == null) {
+            alert("Preencha o campo senha");
+            password.focus();
+            return false;
+        }
+
         event.preventDefault()
 
         var name = $('#name').val();
@@ -43,9 +67,9 @@ export const Login = () => {
                         </div>
 
                         <form id="form" onSubmit={handleLoginFormSubmission}>
-                            <input id="name" type="text" name="name" placeholder="Username" autoFocus />
+                            <input id="name" type="text" name="name" placeholder="Username" autoFocus onChange={mudarCor} />
                             <input id="password" type="password" name="password" placeholder="Password" />
-                            <input type="submit" value="Login" />
+                            <input id="botao" type="submit" value="Login" />
                         </form>
 
                         <p>Não possui uma conta? <a href="/signup" onClick={navigation("/signup")}>Registre-se</a>
