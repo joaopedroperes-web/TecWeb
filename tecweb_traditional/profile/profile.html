@@ -1,105 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;500;700&display=swap"rel="stylesheet">
-        <title>Profile</title>
-    </head>
-    <body>
-        <nav class="nav-bar container">
-            <a href="../home/index.html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav class="nav-bar container">
+        <a href="../home/index.html">
             <img class="nav-bar--logo"
                 src="https://uploads-ssl.webflow.com/643555a120509a18b1817654/64355624c2464482e15d3880_PGRAMIN_IMG.png"
                 alt="Logo PGRAMIN">
-            </a>
-        
-            <div class="nav-bar--buttons-wrapper">
-            <a href="../login/login.html"><button class="black-button">Login</button></a>
-            <a href="../register/register.html"><button class="signup-button black-button">Registro</button></a>
-            </div>
-        </nav>
-        
-        
-        <div id="fundo">
-            <div class="nome-i">
-                <h3>Informações de usuário</h3>
-                <div class="grid-containerc"> 
-                    <div>
-                        <label for="lname">Primeiro nome</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Joaquim">
-                    </div>
-                    <div>
-                        <label for="lname">Sobrenome</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Santos">
-                    </div>
-                    <div>
-                        <label for="lname">Moeda</label>
-                        <input type="text" id="lname" name="lastname" placeholder="BRL">
-                    </div>
-                    <div>
-                        <label for="lname">País</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Brasil">
-                    </div>
-                    <div>
-                        <label for="lname">Email</label>
-                        <input type="text" id="lname" name="lastname" placeholder="joaquim1995santos@gmail.com">
-                    </div>
-                </div>
-            </div>
+        </a>
 
-            <div class="nome">
-                <h3>Senha</h3>
-                <div class="grid-containerc"> 
-                    <div>
-                        <label for="senha">Senha atual</label>
-                        <br>
-                        <input type="password">
-                    </div>
-                    <div>
-                        <label for="npassword">Nova senha</label>
-                        <br>
-                        <input type="password">
-                    </div>
-                    <div>
-                        <label for="npassword">Redigite a nova senha</label>
-                        <br>
-                        <input type="password">
-                    </div>
-                </div>
-            </div>
+        <div class="nav-bar--buttons-wrapper">
+            <a href="../home/index.html"><button class="black-button">Logout</button></a>
+        </div>
+    </nav>
 
-            <div class="nome-f">
-                <h3>Experiência</h3>
-                <div class="grid-containerc">
-                    <div>
-                        <select id="experiencia">
-                            <option value="front-end">Fronte End</option>
-                            <option value="back-end">Back End</option>
-                            <option value="devops">Devops</option>
-                            <option value="cientista-dados">Cientista de dados</option>
-                            <option value="full-stack">Dev fullstack</option>
-                          </select>
-                    </div>
-                    <div>
-                        <select id="nivel">
-                            <option value="estagiario">Estagiário</option>
-                            <option value="junior">Junior</option>
-                            <option value="pleno">Pleno</option>
-                            <option value="senior">Senior</option>
-                          </select>
-                    </div>
+
+    <div id="fundo">
+        <div class="nome-i">
+            <h3>Informações de usuário</h3>
+            <div class="grid-containerc">
+                <div>
+                    <label for="lname">Primeiro nome</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Joaquim">
                 </div>
-                <div id="mconta-div">
-                    <button class="black-button">Salvar</button>
+                <div>
+                    <label for="lname">Sobrenome</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Santos">
+                </div>
+                <div>
+                    <label for="lname">Moeda</label>
+                    <input type="text" id="lname" name="lastname" placeholder="BRL">
+                </div>
+                <div>
+                    <label for="lname">País</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Brasil">
+                </div>
+                <div>
+                    <label for="lname">Email</label>
+                    <input type="text" id="lname" name="lastname" placeholder="joaquim1995santos@gmail.com">
                 </div>
             </div>
         </div>
-        
-        
 
-        </body>
-</html>    
+        <div class="nome">
+            <h3>Senha</h3>
+            <div class="grid-containerc">
+                <div>
+                    <label for="senha">Senha atual</label>
+                    <br>
+                    <input type="password">
+                </div>
+                <div>
+                    <label for="npassword">Nova senha</label>
+                    <br>
+                    <input type="password">
+                </div>
+                <div>
+                    <label for="npassword">Redigite a nova senha</label>
+                    <br>
+                    <input type="password">
+                </div>
+            </div>
+        </div>
+
+        <div class="nome-f">
+            <h3>Experiência</h3>
+            <div class="grid-containerc">
+                <div>
+                    <select id="experiencia">
+                        <option value="front-end">Fronte End</option>
+                        <option value="back-end">Back End</option>
+                        <option value="devops">Devops</option>
+                        <option value="cientista-dados">Cientista de dados</option>
+                        <option value="full-stack">Dev fullstack</option>
+                    </select>
+                </div>
+                <div>
+                    <select id="nivel">
+                        <option value="estagiario">Estagiário</option>
+                        <option value="junior">Junior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
+            </div>
+            <div id="mconta-div">
+                <button class="black-button">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
